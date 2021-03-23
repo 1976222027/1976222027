@@ -29,7 +29,7 @@
 
 ### 🧑‍💻  This week, I spent my time on:
 
-[![my wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=anuraghazra&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
+[![my wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=1976222027&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
 
 
 # Hello there 👋
@@ -86,7 +86,7 @@ I make elegantly professional **💻 Distributed Systems, 📱 iOS apps and 🌐
 
 <p  align="center">
 <!--<img src="https://visitor-badge.glitch.me/badge?page_id=halfrost.halfrost" alt="visitor badge"/>-->
-<img src="https://visitor-badge.laobi.icu/badge?page_id=halfrost.halfrost" alt="visitor badge"/>       
+<img src="https://visitor-badge.laobi.icu/badge?page_id=mahongyin.mahongyin" alt="visitor badge"/>       
 </p>
 
 </p>
