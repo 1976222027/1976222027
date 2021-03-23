@@ -4,11 +4,11 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 ## &#x1f4c8; GitHub Stats
 
-<a href="https://github.com/Zhenye-Na/Zhenye-Na">
+<a href="https://github.com/1976222027/1976222027">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=1976222027&hide=c%2B%2B,c,html&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116" alt="My GitHub Stats" />
 </a>
 
-<a href="https://github.com/Zhenye-Na/Zhenye-Na">
+<a href="https://github.com/1976222027/1976222027">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=1976222027&show_icons=true&line_height=27&count_private=true&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116" alt="My GitHub Stats" />
 </a>
 
@@ -29,7 +29,7 @@
 
 ### 🧑‍💻  This week, I spent my time on:
 
-[![zhenye's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=1976222027&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
+[![zhenye's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=1976222027@qq.com&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
 
 
 # Hello there 👋
