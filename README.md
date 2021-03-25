@@ -33,7 +33,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 # Hello there 👋
 
-![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png)
+![](https://github.com/1976222027/1976222027/blob/main/header_.png)
 
 I make elegantly professional **💻 Distributed Systems, 📱 iOS apps and 🌐 Website** for a living and also **Write some blogs**. 🌈    
 
@@ -67,7 +67,7 @@ I make elegantly professional **💻 Distributed Systems, 📱 iOS apps and 🌐
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=1976222027&hide_langs_below=1&theme=default&line_height=27&layout=compact" />
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=1976222027&show_icons=true&count_private=true&include_all_commits=true&line_height=21" alt="my Github Stats" />
 <img align="center" src="https://github-profile-trophy.vercel.app/?username=1976222027&column=7" alt="my Github Trophy" />
-<img align="center" src="https://github.com/halfrost/halfrost/raw/master/timeline-drop/output/dropped-timeline-halfrost.gif" />
+<img align="center" src="https://github.com/1976222027/1976222027/raw/main/header.png" />
 </p>
 
 </details>
