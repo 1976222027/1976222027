@@ -34,6 +34,9 @@
 <p align="center">
   <a href="https://github.com/1976222027">
     <img src="https://github-readme-stats.wasabeef.vercel.app/api?username=1976222027&show_icons=true&line_height=21&show_icons=true&theme=vue" />
+  </a></br>
+   <a>
+    <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="200">
   </a>
 </p>
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=1976222027.1976222027)
@@ -46,7 +49,7 @@
     <img src="https://komarev.com/ghpvc/?username=mahongyin&color=brightgreen" />
   </a> 
 </p></br>
-  <a>
+  <a align="center">
     <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="200">
   </a> 
 # Hello there 👋
