@@ -27,10 +27,22 @@
 
 [![my wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=mahongyin&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
 
-![我的 GitHub 数据](https://github-readme-stats.vercel.app/api?username=1976222027&count_private=true&show_icons=true)
+![我的 GitHub 数据](https://github-readme-stats.vercel.app/api?username=1976222027&count_private=true&show_icons=true$theme=vue)
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=1976222027.1976222027)
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+<p align="center">
+  <a href="https://github.com/mahongyin/API-Security">
+    <img src="https://img.shields.io/badge/🔥%20API-Security-brightness.svg"
+  </a>  
+  <a href="https://github.com/mahongyin">
+    <img src="https://komarev.com/ghpvc/?username=mahongyin&color=brightgreen" />
+  </a>
+  <a>
+    <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+  </a>  
+</p>
 # Hello there 👋
 
 ![](https://github.com/1976222027/1976222027/blob/main/header_.png)
