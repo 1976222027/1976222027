@@ -29,7 +29,7 @@
 ### 🧑‍💻  This week, I spent my time on:
 
 [![my wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=mahongyin&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
-<figure><embed src="https://wakatime.com/share/@mahongyin/c9d7af9e-7063-472c-b19c-9938098bebb3.svg"></embed></figure>
+[![my wakatime](https://wakatime.com/share/@mahongyin/c9d7af9e-7063-472c-b19c-9938098bebb3.svg)
 <!--![我的 GitHub 数据](https://github-readme-stats.vercel.app/api?username=1976222027&count_private=true&show_icons=true$theme=vue)-->
 <div>
     <img src="https://emojis.slackmojis.com/emojis/images/1563480763/5999/meow_party.gif" width="60" height="60"/> 
