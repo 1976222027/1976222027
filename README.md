@@ -1,8 +1,8 @@
 <a href="https://ghbtns.com/github-btn.html?user=1976222027&repo=1976222027&type=star&count=true">
-  <video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
+</a>
+<video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
  <source id="mp4" src="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
 </video>
-</a>
 ## &#x1f4c8; GitHub Stats  
 
 <a href="https://github.com/1976222027/1976222027">
