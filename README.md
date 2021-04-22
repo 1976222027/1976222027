@@ -25,8 +25,7 @@
 <a href="https://github.com/mahongyin/API-Security">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=mahongyin&repo=API-Security&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116" alt="API-Security" />
 </a>
-<a href="https://ghbtns.com/github-btn.html?user=1976222027&repo=1976222027&type=star&count=true">
-</a>
+
 ### 🧑‍💻  This week, I spent my time on:
 
 [![my wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=mahongyin&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=0e1116)](https://github.com/anuraghazra/github-readme-stats)
