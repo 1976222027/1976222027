@@ -37,9 +37,6 @@
     <img src="https://emojis.slackmojis.com/emojis/images/1563480763/5999/meow_party.gif" width="60" height="60" align="right"/> 
 </div>
 <p align="center">
-  <a href="https://github.com/1976222027">
-    <img src="https://github-readme-stats.wasabeef.vercel.app/api?username=1976222027&show_icons=true&line_height=21&show_icons=true&theme=vue" />
-  </a></br>
    <a>
     <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="200">
   </a>
