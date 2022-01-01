@@ -19,7 +19,7 @@ def sent_message(text:str,title:str,picUrl:str,messageUrl:str):
     data={
         "msgtype": "link", 
         "link": {
-            "text": text, 
+            "text": "通知："+text, 
             "title": title, 
             "picUrl": picUrl, 
             "messageUrl": messageUrl
