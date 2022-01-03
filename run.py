@@ -56,7 +56,7 @@ def get_message():
         timestamp = time.mktime(timeArray)
         ac_time=nowtime-timestamp+28800
         #默认时间频率为两小时，单位秒即7200，可以根据自己需求更改。中国为东八区，比标准时间快8小时。
-        if ac_time<7200 :
+        if ac_time<12*3600 :
          sent_message(date+"\n"+info,title,img,url)
          print("log:",date,title,info)
         else:
