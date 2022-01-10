@@ -11,6 +11,8 @@
 ![](https://github-readme-stats.vercel.app/api?username=1976222027&show_icons=true&count_private=true&hide_title=true%27&hide=contribs&include_all_commits=true&theme=highcontrast&bg_color=30,e96443,904e95)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=1976222027&hide=html&layout=compact)
 
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/xuexiangjys/TemplateAppProject.svg)](https://starchart.cc/xuexiangjys/TemplateAppProject)
 ## 🏆 GitHub Trophies
 💬【有任何问题在这告诉我】[Ask me about anything here↗](https://github.com/1976222027/1976222027/issues)
 
