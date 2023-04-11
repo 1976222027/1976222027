@@ -70,7 +70,7 @@
 <img align="center" src="https://github-profile-trophy.vercel.app/?username=1976222027&column=7" alt="my Github Trophy" />
 <img align="center" src="https://github.com/1976222027/1976222027/raw/main/header_.png" />
 </p>
- [😄](https://juejin.cn/user/1063982987741245/posts)
+![😄](https://juejin.cn/user/1063982987741245/posts)
 </details>
   
 <hr>
