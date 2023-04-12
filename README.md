@@ -70,7 +70,9 @@
 <img align="center" src="https://github-profile-trophy.vercel.app/?username=1976222027&column=7" alt="my Github Trophy" />
 <img align="center" src="https://github.com/1976222027/1976222027/raw/main/header_.png" />
 </p>
-![😄](https://juejin.cn/user/1063982987741245/posts)
+![JUEJIN](https://juejin.cn/user/1063982987741245/posts)
+![JIANSHU](https://www.jianshu.com/u/aba4338c7578)
+![CSDN](https://blog.csdn.net/u014175593?type=blog)
 </details>
   
 <hr>
