@@ -14,6 +14,6 @@ jobs:
         with:
           python-version: '3.9' # 指定python版本
           cache: 'poetry' # 设置缓存
-
+      - run: pip3 install datetime json requests
       - run: poetry install --without dev # 安装
       - run: poetry run python .\zhiban.py # 执行
