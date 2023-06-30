@@ -4,19 +4,19 @@ import os
 import requests
 
 jiaban = [
-    ["付海申"， "李学林"， "马洪印"]，
-    ["李运琴"， "田青林"， "李晓欢"]，
-    ["张志朋"， "任诘嘉"， "周福生"]，
-    ["周广鹏"， "纪元"， "赵昱胜"]，
-    ["卢超"， "刘新顺"]， []， []]
+    ["付海申", "李学林", "马洪印"],
+    ["李运琴", "田青林", "李晓欢"],
+    ["张志朋", "任诘嘉", "周福生"],
+    ["周广鹏", "纪元", "赵昱胜"],
+    ["卢超", "刘新顺"], [], []]
 
 
 # 计算两个日期相差天数，自定义函数名，和两个日期的变量名。
 # time.strptime()函数根据指定的格式把一个时间字符串解析为时间元组。
 def getDays(str1, str2):
-    date1 = datetime.datetime。strptime(str1[0:10]， "%Y-%m-%d")
-    date2 = datetime.datetime。strptime(str2[0:10]， "%Y-%m-%d")
-    num = (date2 - date1)。days
+    date1 = datetime.datetime.strptime(str1[0:10], "%Y-%m-%d")
+    date2 = datetime.datetime.strptime(str2[0:10], "%Y-%m-%d")
+    num = (date2 - date1).days
     return num
 
 
@@ -67,16 +67,15 @@ def get_datas(my_time):
     return my_data
 
 
-
 if __name__ == "__main__":
     dd_token = os.environ['TOKEN_DD']
-    my_data = get_datas(datetime.today().strftime("%Y-%m-%d"))
+    my_data = get_datas(datetime.datetime.today().strftime("%Y-%m-%d"))
     header = {
         "Content-Type": "application/json",
         "Charset": "UTF-8"
     }
 
-    my_url = "https://oapi.dingtalk.com/robot/send?access_token="+dd_token
+    my_url = "https://oapi.dingtalk.com/robot/send?access_token=" + dd_token
     ret = requests.post(url=my_url, data=json.dumps(my_data), headers=header)
     if ret.status_code == 200:
         print(ret.text)
