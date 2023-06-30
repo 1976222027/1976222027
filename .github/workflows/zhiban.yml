@@ -1,19 +1,26 @@
 name: zhiban
 on:
   schedule:
-    - cron: '50 9 * * *' #40 3,9=每日11点40,17点40，两个时间点执行任务
+  - cron:   '50 9 * * *' #40 3,9=每日11点40,17点40，两个时间点执行任务
+  workflow_dispatch:
 jobs:
-  work:
+  send_message:
     runs-on: ubuntu-latest
+    name: send zhiban to your friend
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: szenius/set-timezone@v1.0 # 设置执行环境的时区
-        with:
-          timezoneLinux: "Asia/Shanghai"
-      - uses: actions/setup-python@v4 # 使用python装配器
-        with:
-          python-version: '3.9' # 指定python版本
-          cache: 'poetry' # 设置缓存
-      - run: pip3 install datetime json requests
-      - run: poetry install --without dev # 安装
-      - run: poetry run python .\zhiban.py # 执行
+    - name: checkout
+      uses: actions/checkout@v3
+      with:
+        ref: master
+
+    - name: sender
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+    - run: pip install datetime json requests && python ./zhiban.py
+
+    env:
+      TOKEN_DD: ${{ secrets.TOKEN_DD }}
+      MOBIE: ${{ secrets.MOBIE }}
