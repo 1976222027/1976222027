@@ -1,21 +1,22 @@
 import datetime
 import json
+import os
 import requests
 
 jiaban = [
-    ["付海申", "李学林", "马洪印"],
-    ["李运琴", "田青林", "李晓欢"],
-    ["张志朋", "任诘嘉", "周福生"],
-    ["周广鹏", "纪元", "赵昱胜"],
-    ["卢超", "刘新顺"], [], []]
+    ["付海申"， "李学林"， "马洪印"]，
+    ["李运琴"， "田青林"， "李晓欢"]，
+    ["张志朋"， "任诘嘉"， "周福生"]，
+    ["周广鹏"， "纪元"， "赵昱胜"]，
+    ["卢超"， "刘新顺"]， []， []]
 
 
 # 计算两个日期相差天数，自定义函数名，和两个日期的变量名。
 # time.strptime()函数根据指定的格式把一个时间字符串解析为时间元组。
 def getDays(str1, str2):
-    date1 = datetime.datetime.strptime(str1[0:10], "%Y-%m-%d")
-    date2 = datetime.datetime.strptime(str2[0:10], "%Y-%m-%d")
-    num = (date2 - date1).days
+    date1 = datetime.datetime。strptime(str1[0:10]， "%Y-%m-%d")
+    date2 = datetime.datetime。strptime(str2[0:10]， "%Y-%m-%d")
+    num = (date2 - date1)。days
     return num
 
 
