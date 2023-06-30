@@ -48,7 +48,7 @@ def get_datas(my_time):
     name = doSort(my_time)
     # 返回钉钉模型数据，1:文本；
     if '马洪印' in name:
-        mobie = '15732164757'
+        mobie = os.environ['MOBIE']
     else:
         mobie = ''
     my_data = {
@@ -68,7 +68,7 @@ def get_datas(my_time):
 
 
 if __name__ == "__main__":
-    dd_token = 'ba35e19ca18333d8efd8ff8da2535ab1915a2457997472c8f60e3578b694e269'
+    dd_token = os.environ['TOKEN_DD']
     my_data = get_datas(datetime.today().strftime("%Y-%m-%d"))
     header = {
         "Content-Type": "application/json",
