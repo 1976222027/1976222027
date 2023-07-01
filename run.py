@@ -2,9 +2,9 @@
 import time,hmac,hashlib,base64,urllib.parse,sys,requests,json
 from lxml import etree
 def sent_message(text:str,title:str,picUrl:str,messageUrl:str):
+    secret = 'SEC3ff30c626bffa51c35844ff75934e5f3c22c98dd587cfa9485212625402ecf08'
     try:
         token=sys.argv[1]
-        secret = sys.argv[2]
     except:
         print('secret loss')
     timestamp = str(round(time.time() * 1000))  
