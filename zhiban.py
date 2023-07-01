@@ -68,13 +68,22 @@ def get_datas(my_time):
 
 
 if __name__ == "__main__":
-    dd_token = os.environ['TOKEN_DD']
-    my_data = get_datas(datetime.datetime.today().strftime("%Y-%m-%d"))
+    # 时区问题
+    SHA_TZ = datetime.timezone(
+        datetime.timedelta(hours=8),
+        name='Asia/Shanghai',
+    )
+    # 协调世界时
+    utc_now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
+    beijing_now = utc_now.astimezone(SHA_TZ)
+    today = beijing_now.date()
+    # today =datetime.datetime.today().strftime("%Y-%m-%d")
+    my_data = get_datas(today)
     header = {
         "Content-Type": "application/json",
         "Charset": "UTF-8"
     }
-
+    dd_token = os.environ['TOKEN_DD']
     my_url = "https://oapi.dingtalk.com/robot/send?access_token=" + dd_token
     ret = requests.post(url=my_url, data=json.dumps(my_data), headers=header)
     if ret.status_code == 200:
