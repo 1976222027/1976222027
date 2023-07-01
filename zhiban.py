@@ -69,14 +69,18 @@ def get_datas(my_time):
 
 if __name__ == "__main__":
     # 时区问题
-    SHA_TZ = datetime.timezone(
-        datetime.timedelta(hours=8),
-        name='Asia/Shanghai',
-    )
-    # 协调世界时
-    utc_now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
-    beijing_now = utc_now.astimezone(SHA_TZ)
-    today = beijing_now.date()
+    # SHA_TZ = datetime.timezone(
+    #     datetime.timedelta(hours=8),
+    #     name='Asia/Shanghai',
+    # )
+    # # 协调世界时
+    # utc_now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
+    # beijing_now = utc_now.astimezone(SHA_TZ)
+    # today = beijing_now.date().strftime("%Y-%m-%d")
+
+    now = datetime.datetime.utcnow()  # utc时间
+    bj_time = now + datetime.timedelta(hours=8)  # 直接加8，很傻瓜
+    today = bj_time.strftime('%Y-%m-%d')
     # today =datetime.datetime.today().strftime("%Y-%m-%d")
     my_data = get_datas(today)
     header = {
