@@ -4,29 +4,29 @@ on:
     - cron: "0 0/12 * * *"  #每12小时
 jobs:
     send_message:
-    runs-on: ubuntu-latest
-    name: send run
+      runs-on: ubuntu-latest
+      name: send run
 
-    steps:
-    - name: checkout
-      uses: actions/checkout@v3
-      with:
-        ref: main
+      steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          ref: main
 
-    - name: sender
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-        architecture: 'x64'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Run dd
-      run: |
-        python ./run.py ${{ secrets.DD_TOKEN }}
-    #- run: pip install requests && python ./run.py ${{ secrets.DD_TOKEN }}
+      - name: sender
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Run dd
+        run: |
+          python ./run.py ${{ secrets.DD_TOKEN }}
+      #- run: pip install requests && python ./run.py ${{ secrets.DD_TOKEN }}
 
-    env:
-      DD_TOKEN: ${{ secrets.DD_TOKEN }}
+      env:
+        DD_TOKEN: ${{ secrets.DD_TOKEN }}
