@@ -3,11 +3,11 @@ on:
   schedule:
     - cron: "0 0/12 * * *"  #每12小时
 jobs:
-    send_message:
-      runs-on: ubuntu-latest
-      name: send run
+  send_message:
+    runs-on: ubuntu-latest
+    name: send run
 
-      steps:
+    steps:
       - name: checkout
         uses: actions/checkout@v3
         with:
@@ -26,7 +26,7 @@ jobs:
       - name: Run dd
         run: |
           python ./run.py ${{ secrets.DD_TOKEN }}
-      #- run: pip install requests && python ./run.py ${{ secrets.DD_TOKEN }}
+    #- run: pip install requests && python ./run.py ${{ secrets.DD_TOKEN }}
 
-      env:
-        DD_TOKEN: ${{ secrets.DD_TOKEN }}
+    env:
+      DD_TOKEN: ${{ secrets.DD_TOKEN }}
