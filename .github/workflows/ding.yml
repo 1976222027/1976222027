@@ -1,7 +1,7 @@
 name: run
 on:
   schedule:
-    - cron: "0 0/12 * * *"  #每12小时
+    - cron: "0 0/168 * * *"  #0+8 每12小时 "0 0/12 * * *"
 jobs:
   send_message:
     runs-on: ubuntu-latest
