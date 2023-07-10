@@ -1,7 +1,7 @@
 name: run
 on:
   schedule:
-    - cron: "0 0 4 ? * 6#3"  #每月第3个周五(6-1)12:00(4:00+8)  每12小时 "0 0/12 * * *"
+    - cron: "0 4 ? * 6#3"  #每月第3个周五(6-1)12:00(4:00+8)  每12小时 "0 0/12 * * *"
 jobs:
   send_message:
     runs-on: ubuntu-latest
