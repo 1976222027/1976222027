@@ -1,11 +1,11 @@
-name: run
+name: wan
 on:
   schedule:
     - cron: '10 0 * * *'  #每天 8点10
 jobs:
   send_message:
     runs-on: ubuntu-latest
-    name: send run
+    name: send wan
 
     steps:
       - name: checkout

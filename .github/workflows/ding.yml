@@ -1,11 +1,11 @@
-name: run
+name: ding
 on:
   schedule:
     - cron: '0 10 1 * *'  #每月第1号18:00  #每12小时 "0 0/12 * * *"
 jobs:
   send_message:
     runs-on: ubuntu-latest
-    name: send run
+    name: send ding
 
     steps:
       - name: checkout
@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Run dd
+      - name: Run ding
         run: |
           python ./ding.py ${{ secrets.DD_TOKEN }}
     #- run: pip install requests && python ./ding.py ${{ secrets.DD_TOKEN }}
