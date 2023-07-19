@@ -1,7 +1,7 @@
 name: run
 on:
   schedule:
-    - cron: "10 0 * * *"  #每天 8点10
+    - cron: '10 0 * * *'  #每天 8点10
 jobs:
   send_message:
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
       - name: Run wan
         run: |
           python ./wandroid.py
-    #- run: pip install requests && python ./run.py ${{ secrets.DD_TOKEN }}
+    #- run: pip install requests && python ./ding.py ${{ secrets.DD_TOKEN }}
 
     env:
       WX_CORP_ID: ${{ secrets.WX_CORP_ID }}
