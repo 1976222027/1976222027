@@ -24,7 +24,7 @@ def sent_message(text: str, title: str, picUrl: str, messageUrl: str):
     hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
     sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
     print(timestamp)
-    print(sign)
+    print(sign)  # 加签了
     url = "https://oapi.dingtalk.com/robot/send?access_token={2}&timestamp={0}&sign={1}".format(timestamp, sign, token)
     data = {
         "msgtype": "link",
@@ -41,4 +41,17 @@ def sent_message(text: str, title: str, picUrl: str, messageUrl: str):
     print(rsp.json().get('errmsg'))
 
 
-sent_message("通知\n" + "info", "title", "img", "url")
+def get_html(url):
+    header = {
+        "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
+    }
+    r = requests.get(url, headers=header)
+    if r.status_code == 200:
+        return r.text
+    else:
+        return None
+
+
+html2 = get_html('http://myip.ipip.net')
+
+sent_message("通知\n" + html2, "通知", "https://avatars.githubusercontent.com/u/34618421?v=4", "url")
