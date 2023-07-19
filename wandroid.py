@@ -54,13 +54,15 @@ else:
 # ==============================================以下为企业微信推送程序=======================================================
 CORP_ID = os.environ['WX_CORP_ID']  # 企业ID
 SECRET = os.environ['WX_CORP_SECRET']  # 应用secret
+WX_ROBOT = os.environ['WX_ROBOT']  # 机器人
 
 
 class WeChatPub:
     s = requests.session()
 
-    def __init__(self):
-        self.token = self.get_token()
+    def __init__(self, tp=0):
+        if tp == 0:
+            self.token = self.get_token()
 
     def get_token(self):
         url = f"https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={CORP_ID}&corpsecret={SECRET}"
@@ -71,8 +73,11 @@ class WeChatPub:
         return json.loads(rep.content)['access_token']
 
     def send_msg(self, content, image_url):
-        url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + self.token
-        # url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=21123499-4881-406a-8272-ff7f753ffe7d'
+        if len(self.token) == 0:
+            url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=' + WX_ROBOT
+        else:
+            url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + self.token
+        #
         header = {
             "Content-Type": "application/json"
         }
@@ -103,6 +108,6 @@ class WeChatPub:
 
 
 if __name__ == "__main__":
-    wechat = WeChatPub()
+    wechat = WeChatPub(1)
     image_url = "https://wework.qpic.cn/wwpic/789412_-8Pbh00NQZqwdjE_1660630201/0"  # 图片的URL
     wechat.send_msg(f"注意！{t}", image_url)
