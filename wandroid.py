@@ -59,6 +59,7 @@ WX_ROBOT = os.environ['WX_ROBOT']  # 机器人
 
 class WeChatPub:
     s = requests.session()
+    token = ''
 
     def __init__(self, tp=0):
         if tp == 0:
