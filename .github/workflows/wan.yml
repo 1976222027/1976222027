@@ -30,6 +30,9 @@ jobs:
     - name: Run mt
       run: |
         python ./mt.py
+    - name: Run alipan
+      run: |
+        python ./alipan.py
 
     env:
       WX_CORP_ID: ${{ secrets.WX_CORP_ID }}
