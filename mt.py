@@ -9,7 +9,6 @@ mt论坛自动签到
 import json
 import os
 import re
-
 import requests
 
 # 设置ua
@@ -76,8 +75,7 @@ def main(username, password):
 
 if __name__ == '__main__':
     # mtluntan = os.getenv("MT_BBS")
-    # mtluntan = os.environ["MT_BBS"]
-    mtluntan = '15732164757&2010MA520ma'
+    mtluntan = os.environ["MT_BBS"]
     # 从环境变量中读取账号密码
     if mtluntan is not None:
         username, password = mtluntan.split('&')
