@@ -2,8 +2,8 @@
 青龙脚本
 mt论坛自动签到
 添加变量mtluntan
-账号密码用&隔开
-例如账号：1234 密码：1111 则变量为1234&1111
+账号密码用@隔开
+例如账号：1234 密码：1111 则变量为1234@1111
 定时规则: 0 0 * * *
 """
 import json
@@ -43,8 +43,12 @@ def main(username, password):
         'https://bbs.binmt.cc/member.php?mod=logging&action=login&infloat=yes&handlekey=login&inajax=1&ajaxtarget=fwin_content_login',
         headers=headers)
     # print(re.findall('loginhash=(.*?)">', chusihua.text))
-    loginhash = re.findall('loginhash=(.*?)">', chusihua.text)[0]
-    formhash = re.findall('formhash" value="(.*?)".*? />', chusihua.text)[0]
+    try:
+        loginhash = re.findall('loginhash=(.*?)">', chusihua.text)[0]
+        formhash = re.findall('formhash" value="(.*?)".*? />', chusihua.text)[0]
+    except:
+        loginhash = ''
+        formhash = ''
     denurl = f'https://bbs.binmt.cc/member.php?mod=logging&action=login&loginsubmit=yes&handlekey=login&loginhash={loginhash}&inajax=1'
     data = {'formhash': formhash, 'referer': 'https://bbs.binmt.cc/forum.php', 'loginfield': 'username',
             'username': username, 'password': password, 'questionid': '0', 'answer': '', }
@@ -75,7 +79,7 @@ if __name__ == '__main__':
     mtluntan = os.environ["MT_BBS"]
     # 从环境变量中读取账号密码
     if mtluntan is not None:
-        username, password = mtluntan.split('&')
+        username, password = mtluntan.split('@')
         main(username, password)
     else:
         print('未设置MT论坛账号密码')
