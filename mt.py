@@ -2,8 +2,8 @@
 青龙脚本
 mt论坛自动签到
 添加变量mtluntan
-账号密码用@隔开
-例如账号：1234 密码：1111 则变量为1234@1111
+账号密码用&隔开
+例如账号：1234 密码：1111 则变量为1234&1111
 定时规则: 0 0 * * *
 """
 import json
@@ -76,10 +76,11 @@ def main(username, password):
 
 if __name__ == '__main__':
     # mtluntan = os.getenv("MT_BBS")
-    mtluntan = os.environ["MT_BBS"]
+    # mtluntan = os.environ["MT_BBS"]
+    mtluntan = '15732164757&2010MA520ma'
     # 从环境变量中读取账号密码
     if mtluntan is not None:
-        username, password = mtluntan.split('@')
+        username, password = mtluntan.split('&')
         main(username, password)
     else:
         print('未设置MT论坛账号密码')
