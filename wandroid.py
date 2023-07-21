@@ -91,7 +91,7 @@ class WeChatPub:
             "news": {
                 "articles": [
                     {
-                        "title": "打卡通知",
+                        "title": "玩安卓打卡通知",
                         "description": content,
                         "url": "URL",
                         "picurl": image_url

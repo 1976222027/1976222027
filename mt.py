@@ -71,7 +71,8 @@ def main(username, password):
 
 
 if __name__ == '__main__':
-    mtluntan = os.getenv("MT_BBS")
+    # mtluntan = os.getenv("MT_BBS")
+    mtluntan = os.environ["MT_BBS"]
     # 从环境变量中读取账号密码
     if mtluntan is not None:
         username, password = mtluntan.split('&')
