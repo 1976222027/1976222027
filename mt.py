@@ -1,4 +1,4 @@
-"""
+""" mt海外IP拒绝访问的
 青龙脚本
 mt论坛自动签到
 添加变量mtluntan
@@ -42,6 +42,7 @@ def main(username, password):
         'https://bbs.binmt.cc/member.php?mod=logging&action=login&infloat=yes&handlekey=login&inajax=1&ajaxtarget=fwin_content_login',
         headers=headers)
     # print(re.findall('loginhash=(.*?)">', chusihua.text))
+    print(chusihua.text)
     try:
         loginhash = re.findall('loginhash=(.*?)">', chusihua.text)[0]
         formhash = re.findall('formhash" value="(.*?)".*? />', chusihua.text)[0]
@@ -52,7 +53,7 @@ def main(username, password):
     data = {'formhash': formhash, 'referer': 'https://bbs.binmt.cc/forum.php', 'loginfield': 'username',
             'username': username, 'password': password, 'questionid': '0', 'answer': '', }
     denlu = session.post(headers=headers, url=denurl, data=data).text
-    print(denlu)
+    # print(denlu)
     if '欢迎您回来' in denlu or '登录成功' in denlu:
         # 获取分组、名字
         # fzmz = re.findall('欢迎您回来，(.*?)，现在', denlu)[0]
@@ -70,7 +71,7 @@ def main(username, password):
         pushplus_notify('MT论坛签到通知', f'签到信息：{sign_info}')
     else:
         print('登录失败')
-        pushplus_notify('MT论坛登录失败', '登录失败')
+        pushplus_notify('MT论坛登录失败', '登录失败,海外ip'+requests.get('http://myip.ipip.net').text)
 
 
 if __name__ == '__main__':
