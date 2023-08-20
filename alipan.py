@@ -8,7 +8,7 @@ import json
 
 # pushplus推送函数
 def pushplus_notify(title, content):
-    PUSH_PLUS_TOKEN = '800033ca79c142b3b5eda19aa011612d'  # 填入从pushplus官网申请的token字符串
+    PUSH_PLUS_TOKEN = 'd4cbccba74df4a24b7c822438b76becb'  # 填入从pushplus官网申请的token字符串
     PUSH_PLUS_USER = ''  # 填入在pushplus官网新增的群组编码或个人用户的user字符串，可以不填。
 
     data = {

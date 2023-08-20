@@ -27,9 +27,6 @@ jobs:
     - name: Run wan
       run: |
         python ./wandroid.py
-    - name: Run mt
-      run: |
-        python ./mt.py
     - name: Run alipan
       run: |
         python ./alipan.py
