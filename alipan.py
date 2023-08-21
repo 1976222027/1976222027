@@ -8,7 +8,7 @@ import json
 
 # pushplus推送函数
 def pushplus_notify(title, content):
-    PUSH_PLUS_TOKEN = 'd4cbccba74df4a24b7c822438b76becb'  # 填入从pushplus官网申请的token字符串
+    PUSH_PLUS_TOKEN = '800033ca79c142b3b5eda19aa011612d'  # 填入从pushplus官网申请的token字符串
     PUSH_PLUS_USER = ''  # 填入在pushplus官网新增的群组编码或个人用户的user字符串，可以不填。
 
     data = {
@@ -36,6 +36,7 @@ def AliyunDrive(token):
     print('阿里云盘签到token：' + token)
 
     result = json.loads(rep)
+    print(json.dumps(result))
     access_token = result['access_token']
     phone = result['user_name']
 
@@ -54,6 +55,7 @@ def AliyunDrive(token):
     rep2 = requests.post(url=url_page, headers=header2,
                          data=json.dumps(date)).content
     result = json.loads(rep2)
+    print(json.dumps(result))
     signInCount = result['result']['signInCount']
 
     print(signInCount)
@@ -73,7 +75,7 @@ def AliyunDrive(token):
     return res + "\n" + res2
 
 # 过期定期修改
-token = 'e007b5bc170d4dabbeea085b0578d3c7'
+token = 'd4cbccba74df4a24b7c822438b76becb'
 
 value = AliyunDrive(token)
 print(value)
