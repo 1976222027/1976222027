@@ -36,7 +36,7 @@ def AliyunDrive(token):
     print('阿里云盘签到token：' + token)
 
     result = json.loads(rep)
-    print(json.dumps(result))
+    # print(json.dumps(result))
     access_token = result['access_token']
     phone = result['user_name']
 
@@ -55,7 +55,7 @@ def AliyunDrive(token):
     rep2 = requests.post(url=url_page, headers=header2,
                          data=json.dumps(date)).content
     result = json.loads(rep2)
-    print(json.dumps(result))
+    # print(json.dumps(result))
     signInCount = result['result']['signInCount']
 
     print(signInCount)
