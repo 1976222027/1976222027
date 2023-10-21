@@ -74,8 +74,8 @@ def AliyunDrive(token):
     res2 = "本次签到获得" + result["result"]["name"] + "," + result["result"]["description"]
     return res + "\n" + res2
 
-# 过期定期修改
-token = '59b4e95ae34448c19068d96982fc2634'
+# 每月过期定期修改
+token = '827836b3cef34296a65d8e2289cd5222'
 
 value = AliyunDrive(token)
 print(value)
