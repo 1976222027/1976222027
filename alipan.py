@@ -1,3 +1,5 @@
+import os
+
 import requests
 import json
 
@@ -75,7 +77,7 @@ def AliyunDrive(token):
     return res + "\n" + res2
 
 # 每月过期定期修改
-token = '827836b3cef34296a65d8e2289cd5222'
+token = os.environ["ALI_YUNPAN"] #'827836b3cef34296a65d8e2289cd5222'
 
 value = AliyunDrive(token)
 print(value)
