@@ -24,6 +24,7 @@ def pushplus_notify(title, content):
     response = requests.post(url=url, data=json.dumps(data), headers=headers)
     return response.text
 
+
 def AliyunDrive(token):
     # 'JSON.parse(localStorage.getItem('token')).refresh_token'
     header = {
@@ -76,8 +77,10 @@ def AliyunDrive(token):
     res2 = "本次签到获得" + result["result"]["name"] + "," + result["result"]["description"]
     return res + "\n" + res2
 
+
 # 每月过期定期修改
-token = os.environ["ALI_YUNPAN"] #'827836b3cef34296a65d8e2289cd5222'
+token = os.getenv("ALI_YUNPAN")
+# '827836b3cef34296a65d8e2289cd5222'
 
 value = AliyunDrive(token)
 print(value)
