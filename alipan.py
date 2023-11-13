@@ -25,7 +25,10 @@ def pushplus_notify(title, content):
     return response.text
 
 
-def AliyunDrive(token):
+def AliyunDrive():
+    # 每月过期定期修改
+    token = os.environ["ALI_YUNPAN"]
+    # '827836b3cef34296a65d8e2289cd5222'
     # 'JSON.parse(localStorage.getItem('token')).refresh_token'
     header = {
         'Content-Type': "application/json",
@@ -78,11 +81,7 @@ def AliyunDrive(token):
     return res + "\n" + res2
 
 
-# 每月过期定期修改
-token = os.getenv("ALI_YUNPAN")
-# '827836b3cef34296a65d8e2289cd5222'
-
-value = AliyunDrive(token)
+value = AliyunDrive()
 print(value)
 if value is not None:
     pushplus_notify('阿里云盘签到通知', f'签到信息：{value}')
