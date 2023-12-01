@@ -1,7 +1,7 @@
 name: zhiban
 on:
   schedule:
-  - cron:   '0 0 1 * *' #001每月1号8点#40 3,9=每日11点40,17点40，两个时间点执行任务
+  - cron:   '40 9 * * *' #'40 9 1 * *'=每月1号17点40, #'40 3,9 * * *'=每日两个时间点11点40,17点40 执行任务
   workflow_dispatch:
 jobs:
   send_message:
