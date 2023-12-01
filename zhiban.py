@@ -96,7 +96,8 @@ def getDateOfficer(current_date):
     else:
         return "今天不是周一、周三或周四，不需要安排值班。"
 
-if __name__ == "__main__2":
+
+if __name__ == "__main__":
     # 时区问题
     # SHA_TZ = datetime.timezone(
     #     datetime.timedelta(hours=8),
