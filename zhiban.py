@@ -81,7 +81,7 @@ def getDateOfficer(current_date):
     current_weekday = current_date.weekday()
     # 检查是否为周一、周三或周四
     if current_weekday in week:  # 周一是0，周三是2，周四是3
-        day_of_week = current_date.strftime("%A")
+        day_of_week = ['周一', '周三', '周四']
         # 只用于比较 不用关心时区
         start_date = datetime.date(2023, 12, 4)
         currentdate = datetime.date.today()
@@ -92,7 +92,7 @@ def getDateOfficer(current_date):
         if week_num % 2 != 0:
             index += 3
         day_officer = jiaban[index]
-        return f"今天是{day_of_week}，以下是今天的值班人员：{day_officer}"
+        return f"今天是{day_of_week[current_weekday]}，以下是今天的值班人员：{day_officer}"
     else:
         return "今天不是周一、周三或周四，不需要安排值班。"
 
