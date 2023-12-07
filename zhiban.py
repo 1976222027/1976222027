@@ -81,7 +81,7 @@ def getDateOfficer(current_date):
     current_weekday = current_date.weekday()
     # 检查是否为周一、周三或周四
     if current_weekday in week:  # 周一是0，周三是2，周四是3
-        day_of_week = ['周一', '周三', '周四']
+        day_of_week = ['周一','周二', '周三', '周四', '周五']
         # 只用于比较 不用关心时区
         start_date = datetime.date(2023, 12, 4)
         currentdate = datetime.date.today()
