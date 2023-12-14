@@ -17,7 +17,7 @@ jobs:
     - name: sender
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.9.13'
         architecture: 'x64'
     - name: Install dependencies
       run: |
