@@ -10,7 +10,10 @@
 
 ![](https://github-readme-stats.vercel.app/api?username=1976222027&show_icons=true&count_private=true&hide_title=true%27&hide=contribs&include_all_commits=true&theme=highcontrast&bg_color=30,e96443,904e95)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=1976222027&hide=html&layout=compact)
-
+[![CSDN](https://img-home.csdnimg.cn/images/20201124032511.png)](https://blog.csdn.net/u014175593?type=blog)
+[![简书](https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png)](https://www.jianshu.com/u/aba4338c7578)
+[![掘金](https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg)](https://juejin.cn/user/1063982987741245/posts)
+![CodeTime badge](https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D3990%26project%3D%26in%3D0)
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/xuexiangjys/TemplateAppProject.svg)](https://starchart.cc/xuexiangjys/TemplateAppProject)
 ## 🏆 GitHub Trophies
@@ -70,10 +73,8 @@
 <img align="center" src="https://github-profile-trophy.vercel.app/?username=1976222027&column=7" alt="my Github Trophy" />
 <img align="center" src="https://github.com/1976222027/1976222027/raw/main/header_.png" />
 </p>
-![JUEJIN](https://juejin.cn/user/1063982987741245/posts)
-![JIANSHU](https://www.jianshu.com/u/aba4338c7578)
-![CSDN](https://blog.csdn.net/u014175593?type=blog)
-[![CodeTime badge](https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D3990%26project%3D%26in%3D0)](https://codetime.dev)
+
+<img src="https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D3990%26project%3D%26in=0"/>
 <a href="https://wakatime.com/@539de019-6483-42c3-a767-a4ff87fed613"><img src="https://wakatime.com/badge/user/539de019-6483-42c3-a767-a4ff87fed613.svg" alt="Total time coded since Mar 23 2021" /></a>
 <p align="center">
   <i>Take a look at my repositories and let's get in touch!</i>
