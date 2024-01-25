@@ -11,9 +11,6 @@
 ![](https://github-readme-stats.vercel.app/api?username=1976222027&show_icons=true&count_private=true&hide_title=true%27&hide=contribs&include_all_commits=true&theme=highcontrast&bg_color=30,e96443,904e95)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=1976222027&hide=html&layout=compact)
 
-[![CSDN](https://img-home.csdnimg.cn/images/20201124032511.png)](https://blog.csdn.net/u014175593?type=blog){:height="100px"}
-[![简书](https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png)](https://www.jianshu.com/u/aba4338c7578){:height="100px"}
-[![掘金](https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg)](https://juejin.cn/user/1063982987741245/posts){:height="100px"}
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/xuexiangjys/TemplateAppProject.svg)](https://starchart.cc/xuexiangjys/TemplateAppProject)
@@ -60,7 +57,19 @@
     <a>
     <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/" />
   </a> 
-</p></br>
+</p>
+
+<a href= "https://github.com/1976222027"><img src="https://img.icons8.com/material-outlined/27/000000/ball-point-pen.png"/></a>
+<a href= "https://www.linkedin.com/in/mahongyin/"><img src="https://img.icons8.com/material-outlined/30/000000/linkedin.png"/></a>
+<a href= "https://twitter.com/mahongyin"><img src="https://img.icons8.com/material-outlined/30/000000/twitter.png"/></a>
+<a href= "https://a1000.top"><img src="https://img.icons8.com/material-outlined/27/000000/geography.png"/></a>
+[![CSDN](https://img-home.csdnimg.cn/images/20201124032511.png){:height="100px"}](https://blog.csdn.net/u014175593?type=blog)
+[![简书](https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png){:height="100px"}](https://www.jianshu.com/u/aba4338c7578)
+[![掘金](https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg){:height="100px"}](https://juejin.cn/user/1063982987741245/posts)
+
+<a href="https://wakatime.com/@539de019-6483-42c3-a767-a4ff87fed613"><img src="https://wakatime.com/badge/user/539de019-6483-42c3-a767-a4ff87fed613.svg" alt="Total time coded since Mar 23 2021" /></a>
+<img src="https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D3990%26project%3D%26in=0"/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=mahongyin.mahongyin" alt="visitor badge"/>       
 
 # Hello there 👋
 
@@ -75,19 +84,3 @@
 <img align="center" src="https://github.com/1976222027/1976222027/raw/main/header_.png" />
 </p>
 
-<img src="https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D3990%26project%3D%26in=0"/>
-<a href="https://wakatime.com/@539de019-6483-42c3-a767-a4ff87fed613"><img src="https://wakatime.com/badge/user/539de019-6483-42c3-a767-a4ff87fed613.svg" alt="Total time coded since Mar 23 2021" /></a>
-<p align="center">
-  <i>Take a look at my repositories and let's get in touch!</i>
-
-<p align="center">
-<a href= "https://github.com/1976222027"><img src="https://img.icons8.com/material-outlined/27/000000/ball-point-pen.png"/></a>
-<a href= "https://www.linkedin.com/in/mahongyin/"><img src="https://img.icons8.com/material-outlined/30/000000/linkedin.png"/></a>
-<a href= "https://twitter.com/mahongyin"><img src="https://img.icons8.com/material-outlined/30/000000/twitter.png"/></a>
-<a href= "https://a1000.top"><img src="https://img.icons8.com/material-outlined/27/000000/geography.png"/></a>
-</p>
-
-<p  align="center">
-<!--<img src="https://visitor-badge.glitch.me/badge?page_id=halfrost.halfrost" alt="visitor badge"/>-->
-<img src="https://visitor-badge.laobi.icu/badge?page_id=mahongyin.mahongyin" alt="visitor badge"/>       
-</p>
