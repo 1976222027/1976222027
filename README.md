@@ -73,9 +73,8 @@
 ![JUEJIN](https://juejin.cn/user/1063982987741245/posts)
 ![JIANSHU](https://www.jianshu.com/u/aba4338c7578)
 ![CSDN](https://blog.csdn.net/u014175593?type=blog)
-</details>
-  
-<hr>
+[![CodeTime badge](https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D3990%26project%3D%26in%3D0)](https://codetime.dev)
+<a href="https://wakatime.com/@539de019-6483-42c3-a767-a4ff87fed613"><img src="https://wakatime.com/badge/user/539de019-6483-42c3-a767-a4ff87fed613.svg" alt="Total time coded since Mar 23 2021" /></a>
 <p align="center">
   <i>Take a look at my repositories and let's get in touch!</i>
 
