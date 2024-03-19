@@ -4,12 +4,12 @@ import os
 import requests
 
 jiaban = [
-    ["周福生", "李晓欢"],
     ["付海申", "李学林", "马洪印"],
     ["李运琴", "田青林"],
     ["张志朋", "任诘嘉"],
     ["周广鹏", "赵昱胜"],
-    ["纪元", "刘新顺"]
+    ["纪元", "刘新顺"],
+    ["周福生", "李晓欢"],
 ]
 
 
@@ -27,7 +27,7 @@ def getGapDays(str1, str2):
 # 周1/3/4
 def doSort(time):
     # 今天和初始天差几天
-    countD = getGapDays('2023-7-3', time)
+    countD = getGapDays('2024-3-11', time)
     zhou = countD // 7  # //取整
     index = countD % 7  # %取余
     if index < 5:
@@ -75,15 +75,15 @@ def get_datas(today):
     return my_data
 
 
-# 123 456 123 456
+# 今天和其实前相差天数
 def getDateOfficer(current_date):
     week = [0, 2, 3]
     current_weekday = current_date.weekday()
     # 检查是否为周一、周三或周四
     if current_weekday in week:  # 周一是0，周三是2，周四是3
-        day_of_week = ['周一','周二', '周三', '周四', '周五']
+        day_of_week = ['周一', '周二', '周三', '周四', '周五']
         # 只用于比较 不用关心时区
-        start_date = datetime.date(2023, 12, 4)
+        start_date = datetime.date(2024, 3, 11)
         currentdate = datetime.date.today()
         delta = currentdate - start_date
         week_num = delta.days // 7
@@ -110,8 +110,11 @@ if __name__ == "__main__":
 
     now = datetime.datetime.utcnow()  # utc时间 因为服务器在国外的将不是北京时间
     bj_time = now + datetime.timedelta(hours=8)  # 直接加8，很傻瓜
-    # today =datetime.datetime.today().strftime("%Y-%m-%d") #时区问题
+    # # today =datetime.datetime.today().strftime("%Y-%m-%d") #时区问题
+    # 模拟指定日期的时间
+    # bj_time = datetime.datetime.strptime("2024-3-20", "%Y-%m-%d")
     my_data = get_datas(bj_time)
+    print(my_data)
     header = {
         "Content-Type": "application/json",
         "Charset": "UTF-8"
