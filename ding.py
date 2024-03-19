@@ -55,4 +55,4 @@ def get_html(url):
 
 html2 = get_html('http://myip.ipip.net')
 
-sent_message(html2, "通知", "https://avatars.githubusercontent.com/u/34618421?v=4", "http://myip.ipip.net")
+sent_message(html2, "通知 call 170", "https://avatars.githubusercontent.com/u/34618421?v=4", "http://myip.ipip.net")
