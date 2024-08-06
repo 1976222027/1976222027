@@ -27,8 +27,8 @@ def pushplus_notify(title, content):
 
 def AliyunDrive():
     # 每月过期定期修改
-    token = os.environ["ALI_YUNPAN"]
-    # '827836b3cef34296a65d8e2289cd5222'
+    # token = os.environ["ALI_YUNPAN"]
+    token = 'cd514b6081264980abaa1f4966f3bbc0'
     # 'JSON.parse(localStorage.getItem('token')).refresh_token'
     header = {
         'Content-Type': "application/json",
@@ -42,7 +42,7 @@ def AliyunDrive():
     print('阿里云盘签到token：' + token)
 
     result = json.loads(rep)
-    # print(json.dumps(result))
+    # print(result)
     access_token = result['access_token']
     phone = result['user_name']
 
@@ -55,29 +55,59 @@ def AliyunDrive():
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 Edg/96.0.1054.62'
     }
 
-    date = {"_rx-s": "mobile"}
-
-    url_page = 'https://member.aliyundrive.com/v1/activity/sign_in_list'
+    # date = {"_rx-s": "mobile"}
+    # url_page = 'https://member.aliyundrive.com/v1/activity/sign_in_list'
+    date = {'isReward': False}
+    url_page = 'https://member.aliyundrive.com/v2/activity/sign_in_list?_rx-s=mobile'
     rep2 = requests.post(url=url_page, headers=header2,
                          data=json.dumps(date)).content
     result = json.loads(rep2)
-    # print(json.dumps(result))
+    # print(result)
     signInCount = result['result']['signInCount']
-
-    print(signInCount)
     print('阿里云盘签到天数：' + str(signInCount) + "天")
+    currentSignInfo = result["result"]["signInInfos"][signInCount - 1]
+    signInDay = currentSignInfo["day"]
+    for reward in currentSignInfo["rewards"]:
+        if reward["status"] == 'finished':
+            if reward['type'] == 'dailySignIn':
+                try:
+                    date = {"signInDay": signInDay}
+                    url_page = 'https://member.aliyundrive.com/v1/activity/sign_in_reward?_rx-s=mobile'
+                    rep3 = requests.post(url=url_page, headers=header2,
+                                         data=json.dumps(date)).content
+                    result = json.loads(rep3)
+                    print(result)
+                except:
+                    print("gg")
+            elif reward['type'] == 'dailyTask':
+                try:
+                    date = {"signInDay": signInCount}
+                    url_page = 'https://member.aliyundrive.com/v2/activity/sign_in_task_reward?_rx-s=mobile'
+                    rep3 = requests.post(url=url_page, headers=header2,
+                                         data=json.dumps(date)).content
+                    result = json.loads(rep3)
+                    print(result)
+                except:
+                    print("gg")
+        elif reward["status"] == 'unfinished':
+            print("任务未完成")
+        elif reward["status"] == 'end':
+            print("任务已结束")
+        else:
+            print('第${signInDay}天领取奖励:reward.name')
 
     date = {"signInDay": signInCount}
-
-    url_page = 'https://member.aliyundrive.com/v1/activity/sign_in_reward?_rx-s=mobile'
+    # url_page = 'https://member.aliyundrive.com/v1/activity/sign_in_reward?_rx-s=mobile'
+    url_page = 'https://member.aliyundrive.com/v2/activity/sign_in_task_reward?_rx-s=mobile'
     rep3 = requests.post(url=url_page, headers=header2,
                          data=json.dumps(date)).content
     result = json.loads(rep3)
-    name = result["result"]["name"]
-    description = result["result"]["description"]
+    print(result)
+    # name = result["result"]["name"]
+    # description = result["result"]["description"]
 
     res = "签到成功, 本月累计签到" + str(signInCount) + "天"
-    res2 = "本次签到获得" + result["result"]["name"] + "," + result["result"]["description"]
+    res2 = result['message'] + ",本次签到获得"  #+ name + "," + description
     return res + "\n" + res2
 
 

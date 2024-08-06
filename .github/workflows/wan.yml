@@ -27,13 +27,13 @@ jobs:
     - name: Run wan
       run: |
         python ./wandroid.py
-    - name: Run alipan
-      run: |
-        python ./alipan.py
+#    - name: Run alipan
+#      run: |
+#        python ./alipan.py
 
     env:
       WX_CORP_ID: ${{ secrets.WX_CORP_ID }}
       WX_CORP_SECRET: ${{ secrets.WX_CORP_SECRET }}
       WX_ROBOT: ${{ secrets.WX_ROBOT }}
       MT_BBS: ${{ secrets.MT_BBS }}
-      ALI_YUNPAN: ${{ secrets.ALI_YUNPAN }}
+#      ALI_YUNPAN: ${{ secrets.ALI_YUNPAN }}
