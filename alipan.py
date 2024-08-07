@@ -27,8 +27,8 @@ def pushplus_notify(title, content):
 
 def AliyunDrive():
     # 每月过期定期修改
-    # token = os.environ["ALI_YUNPAN"]
-    token = 'cd514b6081264980abaa1f4966f3bbc0'
+    token = os.environ["ALI_YUNPAN"]
+    # token = 'cd514b6081264980abaa1f4966f3bbc0'
     # 'JSON.parse(localStorage.getItem('token')).refresh_token'
     header = {
         'Content-Type': "application/json",
