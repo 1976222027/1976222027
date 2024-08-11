@@ -27,9 +27,9 @@ jobs:
     - name: Run wan
       run: |
         python ./wandroid.py
-#    - name: Run alipan
-#      run: |
-#        python ./alipan.py
+    - name: Run xiangjiao
+      run: |
+        python ./xjsign.py
 
     env:
       WX_CORP_ID: ${{ secrets.WX_CORP_ID }}
