@@ -26,8 +26,8 @@ def getGapDays(str1, str2):
 
 # 周1/3/4
 def doSort(time):
-    # 今天和初始天差几天
-    countD = getGapDays('2024-3-11', time)
+    # 今天和初始天差几天 2024-3-11
+    countD = getGapDays('2024-10-14', time)
     zhou = countD // 7  # //取整
     index = countD % 7  # %取余
     if index < 5:
