@@ -84,4 +84,4 @@
 <img align="center" src="https://github-profile-trophy.vercel.app/?username=1976222027&column=7" alt="my Github Trophy" />
 <img align="center" src="https://github.com/1976222027/1976222027/raw/main/header_.png" />
 </p>
-<div style='width:400px; background:url(https://www.proprofs.com/images/loader.gif) center center no-repeat;'><a href='https://www.proprofs.com/quiz-school/ugc/story.php?title=project-management-essentials-certified8m' target='_blank' title='Try this Quiz to get your own certificate'><img alt='Cert' border='0' src='https://www.proprofs.com/quiz-school/certificate/certificate.php?id=335899659&qid=3593197&uname=%E9%A9%AC%20%E6%B4%AA%E5%8D%B0' alt=''></a></div>
+<div style='display:none; width:400px; background:url(https://www.proprofs.com/images/loader.gif) center center no-repeat;'><a href='https://www.proprofs.com/quiz-school/ugc/story.php?title=project-management-essentials-certified8m' target='_blank' title='Try this Quiz to get your own certificate'><img alt='Cert' border='0' src='https://www.proprofs.com/quiz-school/certificate/certificate.php?id=335899659&qid=3593197&uname=%E9%A9%AC%20%E6%B4%AA%E5%8D%B0' alt=''></a></div>
