@@ -9,7 +9,9 @@ import requests
 
 # 签到
 # ==============================================以下为企业微信推送程序=======================================================
-
+CORP_ID = os.environ['WX_CORP_ID']  # 企业ID
+SECRET = os.environ['WX_CORP_SECRET']  # 应用secret
+XJ_TOKEN = os.environ['XJ_TOKEN']
 
 class WeChatPub:
     s = requests.session()
@@ -17,8 +19,7 @@ class WeChatPub:
 
     def __init__(self, tp=0):
         if tp == 0:
-            CORP_ID = os.environ['WX_CORP_ID']  # 企业ID
-            SECRET = os.environ['WX_CORP_SECRET']  # 应用secret
+
             self.token = self.get_token(CORP_ID, SECRET)
 
     def get_token(self, CORP_ID, SECRET):
@@ -79,6 +80,7 @@ def calculate_signature(key, data):
 if __name__ == '__main__':
     host = 'iios.bxguwen.com'
     # secret = calculate_md5("xxxxx") #'63add3a71874e8200be66b14c826ae96'
+    # token = XJ_TOKEN
     token = '6131376237306365626263663432616362303863376464376565386366653965'
     # 接口好像没有验证 secret, 只是定期更新token
     header = {
@@ -96,9 +98,9 @@ if __name__ == '__main__':
     result = rep.text.encode('utf-8').decode('unicode_escape')
     print('相加签到token：' + result)
 
-    # wechat = WeChatPub(1)
-    # image_url = "https://wework.qpic.cn/wwpic/789412_-8Pbh00NQZqwdjE_1660630201/0"  # 图片的URL
-    # wechat.send_msg(f"注意！{result}", image_url)
+    wechat = WeChatPub(1)
+    image_url = "https://wework.qpic.cn/wwpic/789412_-8Pbh00NQZqwdjE_1660630201/0"  # 图片的URL
+    wechat.send_msg(f"注意！{result}", image_url)
 
 if __name__ == '__main3__':
     host = 'n15mo67l5mfd.vergissmeinnicht.xyz'
