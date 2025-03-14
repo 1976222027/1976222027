@@ -36,4 +36,5 @@ jobs:
       WX_CORP_SECRET: ${{ secrets.WX_CORP_SECRET }}
       WX_ROBOT: ${{ secrets.WX_ROBOT }}
       MT_BBS: ${{ secrets.MT_BBS }}
+      XJ_TOKEN: ${{ secrets.XJ_TOKEN }}
 #      ALI_YUNPAN: ${{ secrets.ALI_YUNPAN }}
