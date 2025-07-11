@@ -9,17 +9,21 @@
 '''
 import json
 import os
+import time
+
 import requests
 
-# =========================================以下为工控家人园打卡程序，如果CK失效，只需要替换这部分内容=========================================
+# =========================================以下为定期打卡程序，如果CK失效，只需要替换这部分内容=========================================
 cookies = {
-    'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8': '1687682924',  # 20230625
+    'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8': str(int(time.time())),  # 20230625'1752227497'
     'loginUserName': 'myname',
     'token_pass': 'c2363be327e6353fb6ddc7426b8f1bcc',
     'loginUserName_wanandroid_com': 'myname',
     'token_pass_wanandroid_com': 'c2363be327e6353fb6ddc7426b8f1bcc',
-    'JSESSIONID': 'B2125EE1C7FE4F82CD903806D5C2B0D1',
-    'Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8': '1689747788',  # 2023-07-19
+    'JSESSIONID': 'CC523710CAF4128A2C1394F44ECAE559',
+    'Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8': str(int(time.time())),  # 2023-07-19 1752227576
+
+    #'HMACCOUNT':'DAA415C755B71CD2'
 }
 
 headers = {

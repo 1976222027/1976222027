@@ -80,7 +80,7 @@ def calculate_signature(key, data):
 if __name__ == '__main__':
     host = 'iios.bxguwen.com'
     # secret = calculate_md5("xxxxx") #'63add3a71874e8200be66b14c826ae96'
-    token = XJ_TOKEN
+    token = XJ_TOKEN # 过期时间
     # 接口好像没有验证 secret, 只是定期更新token
     header = {
         'Host': host,
