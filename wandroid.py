@@ -14,14 +14,15 @@ import time
 import requests
 
 # =========================================以下为定期打卡程序，如果CK失效，只需要替换这部分内容=========================================
+curTime = str(int(time.time()))
 cookies = {
-    'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8': str(int(time.time())),  # 20230625'1752227497'
+    'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8': curTime,  # 20230625'1752227497'
     'loginUserName': 'myname',
     'token_pass': 'c2363be327e6353fb6ddc7426b8f1bcc',
     'loginUserName_wanandroid_com': 'myname',
     'token_pass_wanandroid_com': 'c2363be327e6353fb6ddc7426b8f1bcc',
-    'JSESSIONID': 'CC523710CAF4128A2C1394F44ECAE559',
-    'Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8': str(int(time.time())),  # 2023-07-19 1752227576
+    'JSESSIONID': 'F09D894B3669083950F4E09242384666',
+    'Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8': curTime,  # 2023-07-19 1752227576
 
     #'HMACCOUNT':'DAA415C755B71CD2'
 }
@@ -31,7 +32,8 @@ headers = {
     'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
     'Cache-Control': 'max-age=0',
     'Connection': 'keep-alive',
-    'Cookie': 'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8=1687682924; loginUserName=myname; token_pass=c2363be327e6353fb6ddc7426b8f1bcc; loginUserName_wanandroid_com=myname; token_pass_wanandroid_com=c2363be327e6353fb6ddc7426b8f1bcc; JSESSIONID=B2125EE1C7FE4F82CD903806D5C2B0D1; Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8=1689747788',
+    'Cookie': 'HMACCOUNT=DAA415C755B71CD2; JSESSIONID=F09D894B3669083950F4E09242384666; Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8={}; loginUserName=myname; token_pass=c2363be327e6353fb6ddc7426b8f1bcc; loginUserName_wanandroid_com=myname; token_pass_wanandroid_com=c2363be327e6353fb6ddc7426b8f1bcc; Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8={}'.format(curTime, curTime),
+    #'Cookie': 'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8=1687682924; loginUserName=myname; token_pass=c2363be327e6353fb6ddc7426b8f1bcc; loginUserName_wanandroid_com=myname; token_pass_wanandroid_com=c2363be327e6353fb6ddc7426b8f1bcc; JSESSIONID=B2125EE1C7FE4F82CD903806D5C2B0D1; Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8=1689747788',
     'Referer': 'https://www.wanandroid.com/blog/show/2',
     'Sec-Fetch-Dest': 'document',
     'Sec-Fetch-Mode': 'navigate',
