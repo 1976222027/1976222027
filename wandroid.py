@@ -18,10 +18,11 @@ curTime = str(int(time.time()))
 cookies = {
     'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8': curTime,  # 20230625'1752227497'
     'loginUserName': 'myname',
+    'HMACCOUNT': '7BBE8B67202ACDE4',
+    'JSESSIONID': 'CA086195A4F32D7D9652E948774E6F51',
     'token_pass': 'c2363be327e6353fb6ddc7426b8f1bcc',
     'loginUserName_wanandroid_com': 'myname',
     'token_pass_wanandroid_com': 'c2363be327e6353fb6ddc7426b8f1bcc',
-    'JSESSIONID': 'F09D894B3669083950F4E09242384666',
     'Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8': curTime,  # 2023-07-19 1752227576
 
     #'HMACCOUNT':'DAA415C755B71CD2'
@@ -34,7 +35,7 @@ headers = {
     'Connection': 'keep-alive',
     'Cookie': 'HMACCOUNT=DAA415C755B71CD2; JSESSIONID=F09D894B3669083950F4E09242384666; Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8={}; loginUserName=myname; token_pass=c2363be327e6353fb6ddc7426b8f1bcc; loginUserName_wanandroid_com=myname; token_pass_wanandroid_com=c2363be327e6353fb6ddc7426b8f1bcc; Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8={}'.format(curTime, curTime),
     #'Cookie': 'Hm_lvt_90501e13a75bb5eb3d067166e8d2cad8=1687682924; loginUserName=myname; token_pass=c2363be327e6353fb6ddc7426b8f1bcc; loginUserName_wanandroid_com=myname; token_pass_wanandroid_com=c2363be327e6353fb6ddc7426b8f1bcc; JSESSIONID=B2125EE1C7FE4F82CD903806D5C2B0D1; Hm_lpvt_90501e13a75bb5eb3d067166e8d2cad8=1689747788',
-    'Referer': 'https://www.wanandroid.com/blog/show/2',
+    'Referer': 'https://wanandroid.com/blog/show/2',
     'Sec-Fetch-Dest': 'document',
     'Sec-Fetch-Mode': 'navigate',
     'Sec-Fetch-Site': 'same-origin',
@@ -46,7 +47,7 @@ headers = {
     'sec-ch-ua-platform': '"Windows"',
 }
 
-response = requests.get('https://www.wanandroid.com/lg/coin/userinfo/json', cookies=cookies, headers=headers)
+response = requests.get('https://wanandroid.com/lg/coin/userinfo/json', cookies=cookies, headers=headers)
 # =======================================对文件进行编码处理=====================================================
 # response.encoding = 'gbk'
 # =======================================以下为对打印内容的处理，只保留文字=====================================================
